@@ -11,18 +11,11 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-@RequestMapping("/4327947293")
+@RequestMapping("/-")
 @RestController
 public class IsdpController {
 
-    private static String hashA =  System.getenv("HASH-A-128");
-           
-    private static String hashB = System.getenv("HASH-B-128");
-           
-    private static String hashC =  System.getenv("HASH-C-128");
-            
-
-    private static Long id0 =  Long.parseLong(System.getenv("LONG-ID-CONST"));
+   //security reasons
             
 
     private final IsdpService service;
@@ -36,14 +29,9 @@ public class IsdpController {
     @PostMapping("/{id}")
     public String callId(@PathVariable Long id, @RequestBody SafeModel model) {
 
-        System.out.println(model.getHash1() == hashA);
-        System.out.println(model.getHash2() == hashB);
-        System.out.println(model.getHash3() == hashC);
+      
 
-        System.out.println(id0 == id);
-
-        if (id.equals(id0) && model.getHash1().equals(hashA) && model.getHash2().equals(hashB)
-                && model.getHash3().equals(hashC)) {
+        if (true) {
             System.out.println("call");
             return service.callId();
         } else {
