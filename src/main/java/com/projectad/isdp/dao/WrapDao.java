@@ -146,12 +146,7 @@ public class WrapDao implements IsdpSuperDao {
             FirebaseOptions option;
             try {
                 option = new FirebaseOptions.Builder()
-                        .setCredentials(ServiceAccountCredentials.fromPkcs8(
-                            /*System.getenv("FIRE_CLI")*/"103929167872765460709",
-                                /*System.getenv("FIRE_CLEM")*/"firebase-adminsdk-yya78@project-ad-22e63.iam.gserviceaccount.com", 
-                                /*System.getenv("FIRE_KEY_PR")*/"-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQC1UWlwPKjGE5vJ\nuyE4MCfgNtHU66jqteBfHkBXGdBlsCb0M+Ub6sDL5mILyB08UfX26aFa4QHKCgRE\nMMC6wEo9CYjHnDZG0F2O1//7UBMLgy08dWEU0Fao4kwccOhS5oPtxunQF7aR68f0\neCK6Gd5MDIUXzKmK1q3OkszNNEXV64yqqzUYsWPFxPFyVIgzwkjQ1QQMweIQSgCu\nxDhkJAx7564yTYGtn7E0IaIeNW1oI31TlNQp094vH9dVMnzi1unQKl3Z+Vn9DNM+\nPhK0e/RB0D+1l9ceHvRkvnuL0SB/yYv7qdAZaW55EoeUQyjZ2y5w4fEOtYqxn2y5\nUc1SoZHBAgMBAAECggEAQlpDmpYoMSxV03IOixBcV1nYWfHPg+0A6e4ZH4bL05qt\n9qnTCu9SlIt/j84wnLVlrHD84lP7IqOdwhKRRQY/ZKzLiDirSCjSRAbZn29DOPBN\nKpXN7B79x5ngvnu3GTdQSkCDqeoznpzJNLaOBsqWpf/i6L21waAkRLdGCUY61Dhc\nMUPHq0D7R04EJJ/zTQSHr791OXUuWpkVneBpRR5kBz+tEzAetILZuun1JFWGcn9H\n6rCf6WlD2iJhdHgBL6FQRPZ3WoCw3QcIh6wSxyTslGiUj/Uz6+FBJbIrL23qON6s\nij7zzqBp8Sqr0M1eX9hIgbVdnQ4KHrAxI/stInZ+bQKBgQDbJD9DLvsTDqELftL3\n9+GpPV/MWpb8z4juW210P2gLRmKZ4vI8pOn/RmAE3J9MJKsshbF45msXPAf6wIMI\nc7BFuT2F13DySqM36yGEwy5VI/AO79Cf6AZ0KlM49ZQk/enkBx5NR4AEOJjAoWHB\nFuRqGAaNAqP7L+tP0e09NXjEMwKBgQDT0JCs+nl0sfXH4r8fWrIbtCFRhJAcTWNG\nXOGi5fZ/d7l8gKigfqdug0jClLMUrau34rUvHUS0xGFbq3WSebEWNydK4CaSZZdZ\nvBNRAwPSqLP6aeWd/hjJ7yxIjtx7AKnKH9LeHwJluEQYvYSfgAeNxRWYDChemanz\n7zE6tpg+OwKBgQDDsenguCq0yQKd/mKt2Con9UwAdQGSwE569SCYiCsErpVM8TL7\nXxYrxg/nJ5IF8FUATF/BJJuLwyspDRO2z4EhspuzU0JkzKxXOl3Tbm2I0LAG1rgK\npKxmvolVO1FRe4KMBKNVxb0Xh+c5VqSyRxwxdkUbVblUjmVoAYMHfyHaqwKBgQCT\nsgDPvS/noReis4dVU6aSDr6U2vyp34Rz0dw7/GIva8pY+FWc4/PX6Y9YrttYdekh\nJeH04lHAQpcolpw68MP8m6S4XyhGOLSai7xkZtfJkn09BY5o5n9ef3m/dm5jDolW\nOW6OF81SJHTHU48gsOOThXOTPBcCL+AECiunpx7tdQKBgQCzKD487K3LGWMaSJj8\nes5jm2OBijPqaxS+Dfbc9g3PwxstJP+vuL3DcOz1qMz0g1wwChEdXmOmHwWvgoFz\nIG4qEiZYiVWWb+U3HhUsDC2C52IipUoC71JHgDzpxa+/difsNFLzmNXMh24Eb8el\nREBr8GO39ZN6etWRW4Sc9SHt1A==\n-----END PRIVATE KEY-----\n",
-                                /*System.getenv("FIRE_KEY_PR_ID")*/"be678b59edeba680341f0144502761745d705bf9", null))
-                        .setDatabaseUrl("https://project-ad-22e63.firebaseio.com/").
+                        //private
                     
                         build();
 
@@ -182,12 +177,7 @@ public class WrapDao implements IsdpSuperDao {
                 FirebaseOptions option;
             try {
                 option = new FirebaseOptions.Builder()
-                        .setCredentials(ServiceAccountCredentials.fromPkcs8(
-                            /*System.getenv("FIRE_CLI")*/"103929167872765460709",
-                                /*System.getenv("FIRE_CLEM")*/"firebase-adminsdk-yya78@project-ad-22e63.iam.gserviceaccount.com", 
-                                /*System.getenv("FIRE_KEY_PR")*/"-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQC1UWlwPKjGE5vJ\nuyE4MCfgNtHU66jqteBfHkBXGdBlsCb0M+Ub6sDL5mILyB08UfX26aFa4QHKCgRE\nMMC6wEo9CYjHnDZG0F2O1//7UBMLgy08dWEU0Fao4kwccOhS5oPtxunQF7aR68f0\neCK6Gd5MDIUXzKmK1q3OkszNNEXV64yqqzUYsWPFxPFyVIgzwkjQ1QQMweIQSgCu\nxDhkJAx7564yTYGtn7E0IaIeNW1oI31TlNQp094vH9dVMnzi1unQKl3Z+Vn9DNM+\nPhK0e/RB0D+1l9ceHvRkvnuL0SB/yYv7qdAZaW55EoeUQyjZ2y5w4fEOtYqxn2y5\nUc1SoZHBAgMBAAECggEAQlpDmpYoMSxV03IOixBcV1nYWfHPg+0A6e4ZH4bL05qt\n9qnTCu9SlIt/j84wnLVlrHD84lP7IqOdwhKRRQY/ZKzLiDirSCjSRAbZn29DOPBN\nKpXN7B79x5ngvnu3GTdQSkCDqeoznpzJNLaOBsqWpf/i6L21waAkRLdGCUY61Dhc\nMUPHq0D7R04EJJ/zTQSHr791OXUuWpkVneBpRR5kBz+tEzAetILZuun1JFWGcn9H\n6rCf6WlD2iJhdHgBL6FQRPZ3WoCw3QcIh6wSxyTslGiUj/Uz6+FBJbIrL23qON6s\nij7zzqBp8Sqr0M1eX9hIgbVdnQ4KHrAxI/stInZ+bQKBgQDbJD9DLvsTDqELftL3\n9+GpPV/MWpb8z4juW210P2gLRmKZ4vI8pOn/RmAE3J9MJKsshbF45msXPAf6wIMI\nc7BFuT2F13DySqM36yGEwy5VI/AO79Cf6AZ0KlM49ZQk/enkBx5NR4AEOJjAoWHB\nFuRqGAaNAqP7L+tP0e09NXjEMwKBgQDT0JCs+nl0sfXH4r8fWrIbtCFRhJAcTWNG\nXOGi5fZ/d7l8gKigfqdug0jClLMUrau34rUvHUS0xGFbq3WSebEWNydK4CaSZZdZ\nvBNRAwPSqLP6aeWd/hjJ7yxIjtx7AKnKH9LeHwJluEQYvYSfgAeNxRWYDChemanz\n7zE6tpg+OwKBgQDDsenguCq0yQKd/mKt2Con9UwAdQGSwE569SCYiCsErpVM8TL7\nXxYrxg/nJ5IF8FUATF/BJJuLwyspDRO2z4EhspuzU0JkzKxXOl3Tbm2I0LAG1rgK\npKxmvolVO1FRe4KMBKNVxb0Xh+c5VqSyRxwxdkUbVblUjmVoAYMHfyHaqwKBgQCT\nsgDPvS/noReis4dVU6aSDr6U2vyp34Rz0dw7/GIva8pY+FWc4/PX6Y9YrttYdekh\nJeH04lHAQpcolpw68MP8m6S4XyhGOLSai7xkZtfJkn09BY5o5n9ef3m/dm5jDolW\nOW6OF81SJHTHU48gsOOThXOTPBcCL+AECiunpx7tdQKBgQCzKD487K3LGWMaSJj8\nes5jm2OBijPqaxS+Dfbc9g3PwxstJP+vuL3DcOz1qMz0g1wwChEdXmOmHwWvgoFz\nIG4qEiZYiVWWb+U3HhUsDC2C52IipUoC71JHgDzpxa+/difsNFLzmNXMh24Eb8el\nREBr8GO39ZN6etWRW4Sc9SHt1A==\n-----END PRIVATE KEY-----\n",
-                                /*System.getenv("FIRE_KEY_PR_ID")*/"be678b59edeba680341f0144502761745d705bf9", null))
-                        .setDatabaseUrl("https://project-ad-22e63.firebaseio.com/").
+                        //private
                     
                         build();
 
