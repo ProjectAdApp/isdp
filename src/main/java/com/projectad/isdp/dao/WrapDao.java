@@ -100,16 +100,23 @@ public class WrapDao implements IsdpSuperDao {
             System.out.println("sleep");
               
             int args = 0;
+            boolean containsCookie = false;
             while(args < 40){
-                System.out.println(driver.manage().getCookies().size());
+                if(driver.manage().getCookies().stream().anyMatch(cookie -> cookie.getName().toLowerCase().equals("sessionid"))) {
+                    containsCookie = true;
+                    break;
+                }
                 Thread.sleep(100);
                 args++;
             }
 
-            System.out.println(driver.manage().getCookieNamed("sessionid").getValue());
-            
-            
-            
+            if(!containsCookie){
+
+                /// cockie was not found!!!
+
+                return "fail";
+
+            }
 
             //driver.manage().addCookie(new Cookie.Builder("sessionid", "id").build());
 
@@ -127,12 +134,6 @@ public class WrapDao implements IsdpSuperDao {
 
        //      Thread.sleep(5000);
 
-             
-
-           // WebElement element3 =  wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//div[@class='vgS-T']")));
-
-            System.out.println("load cookies");
-            System.out.println(driver.manage().getCookies().size());
             Cookie c = driver.manage().getCookieNamed("sessionid");
 
             System.out.println(c.getValue());
