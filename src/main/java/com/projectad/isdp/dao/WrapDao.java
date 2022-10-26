@@ -178,7 +178,9 @@ public class WrapDao implements IsdpSuperDao {
 
         } catch (Exception e) {
             e.printStackTrace();
-
+            if(driver == null){
+                return "fail";
+            }
             if(driver.manage().getCookieNamed("sessionid")!=null){
                 FirebaseOptions option;
             try {
